@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="General">
+
+        <EditTextPreference
+            android:hint="John Doe"
+            android:inputType="textPersonName"
+            android:key="key_name"
+            android:title="Name" />
+
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="Gender"
+            android:entries="@array/pref_genders"
+            android:entryValues="@array/pref_genders_values"
+            android:key="key_gender"
+            android:title="Gender" />
+
+        <EditTextPreference
+            android:hint="25"
+            android:defaultValue="24"
+            android:inputType="number"
+            android:key="key_age"
+            android:title="Age" />
+
+        <EditTextPreference
+            android:hint="person@example.com"
+            android:inputType="textEmailAddress"
+            android:key="key_email"
+            android:title="Email" />
+
+        <EditTextPreference
+            android:hint="2/21/1994"
+            android:inputType="date"
+            android:key="key_birthday"
+            android:title="Birthday" />
+
+        <EditTextPreference
+            android:hint="425-800-9000"
+            android:inputType="phone"
+            android:key="key_phone"
+            android:title="Phone" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Customize">
+
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="How often do you want to check in?"
+            android:entries="@array/pref_frequency_list_titles"
+            android:entryValues="@array/pref_frequency_list_values"
+            android:key="key_frequency"
+            android:title="Checkin Frequency" />
+
+        <MultiSelectListPreference
+            android:key="key_customize_detail"
+            android:defaultValue="@array/pref_customize_values_default"
+            android:dialogTitle="Choose which details to track!"
+            android:entries="@array/pref_customize_entries"
+            android:entryValues="@array/pref_customize_values"
+            android:summary="Decide which details to keep track of..."
+            android:title="Level of Detail" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Information">
+
+        <Preference
+            android:selectable="false"
+            android:key="key_summary"
+            android:summary="Summary..." />
+
+        <Preference
+            android:summary="App version"
+            android:key="key_version"
+            android:title="Version" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Actions">
+
+        <Preference
+            android:title="Log Out"
+            android:key="key_logout"
+            android:icon="@android:drawable/ic_lock_power_off"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
