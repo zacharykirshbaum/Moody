@@ -178,4 +178,5 @@
     <string name="pref_title_checkin_frequency">Checkin Frequency</string>
     <string name="pref_description_share">Share your status updates with friends you have connected with.</string>
     <string name="pref_title_share">Enable sharing with friends</string>
+    <string name="title_activity_checkin">CheckinActivity</string>
 </resources>

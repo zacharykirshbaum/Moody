@@ -1,23 +1,20 @@
 package com.zacharykirshbaum.moody.moody;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
-import butterknife.Bind;
-import butterknife.OnClick;
-
 public class MainActivity extends AppCompatActivity {
 
     private ActionBar toolbar;
 
-    @Bind(R.id.checkin_button) FloatingActionButton _checkinButton;
+//    @Bind(R.id.checkin_button) FloatingActionButton _checkinButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,10 +38,11 @@ public class MainActivity extends AppCompatActivity {
 //        startActivity(new Intent(MainActivity.this, LoginActivity.class));
     }
 
-    @OnClick(R.id.checkin_button)
-    public void onClickCheckinButton() {
-
-    }
+//    @OnClick(R.id.checkin_button)
+//    public void onClickCheckinButton() {
+//        Log.d("asdf","asdf");
+//        Toast.makeText(this, "Checkin in progress!", Toast.LENGTH_LONG).show();
+//    }
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -58,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_checkin:
                     toolbar.setTitle(R.string.title_checkin);
-                    loadFragment(new CheckinFragment());
+                    startActivity(new Intent(MainActivity.this, CheckinActivity.class));
                     return true;
                 case R.id.navigation_insights:
                     toolbar.setTitle(R.string.title_insights);

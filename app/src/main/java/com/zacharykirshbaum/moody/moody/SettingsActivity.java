@@ -84,7 +84,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
             bindPreferenceSummaryToValue(findPreference("key_phone"));
 
             bindPreferenceSummaryToValue(findPreference("key_frequency"));
-            bindPreferenceSummaryToValue(findPreference("key_customize_detail"));
+//            bindPreferenceSummaryToValue(findPreference("key_customize_detail"));
 
             bindPreferenceSummaryToValue(findPreference("key_summary"));
             bindPreferenceSummaryToValue(findPreference("key_version"));

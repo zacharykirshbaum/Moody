@@ -40,6 +40,37 @@
                     app:civ_border_color="#FFFFFF"
                     app:civ_border_width="2dp" />
 
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageview_account_profile"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:id="@+id/profile_text_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="Zachary Kirshbaum" />
+
+                    <TextView
+                        android:id="@+id/profile_text_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/profile_text_name"
+                        android:layout_margin="2dp"
+                        android:text="M" />
+
+                    <TextView
+                        android:id="@+id/profile_text_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/profile_text_gender"
+                        android:layout_margin="2dp"
+                        android:text="24" />
+
+                </RelativeLayout>
+
                 <android.support.design.widget.FloatingActionButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
